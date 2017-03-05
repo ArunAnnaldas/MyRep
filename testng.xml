@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name = "Sample Suite" thread-count="2" parallel="methods">
+	<test name = "DataProviderTest">
+		<classes>
+			<class name = "multipleDataProviders.Login"></class>
+			<class name = "multipleDataProviders.AddProduct"></class>
+			<class name = "multipleDataProviders.SearchFunctionality"></class>
+		</classes>
+	</test>
+	
+	<test name = "Sequence Test">
+		<classes>
+			<class name = "TestNGAnnotations.AnnotationSequence"></class>
+		</classes>
+	</test>
+	
+</suite>
+
+
+ <!-- 
+<suite name = "Sample Suite">
+	<test name = "DataProviderTest">
+		<classes>
+			<class name = "TestNGAnnotations.DataProviderExample"></class>
+		</classes>
+	</test>
+</suite> -->
+
+ <!-- 
+<suite name = "Sample Suite">
+	<parameter name= "Product Name" value = "Sennheiser"></parameter>
+	<parameter name= "Color" value = "Black"></parameter>
+	<parameter name= "Product Code" value = "AX-500"></parameter>
+	<parameter name= "Make" value = "2016"></parameter>
+	<test name = "Testing Parameterization of Data">
+		<classes>
+			<class name = "TestNGAnnotations.AnnotationSequence"></class>
+		</classes>
+	</test>
+	
+	<test name = "Testing Parameterization of Data _ 2">
+	<parameter name= "Product Name" value = "SpigenCover"></parameter>
+	<parameter name= "Color" value = "Grey"></parameter>
+	<parameter name= "Product Code" value = "CBA-4500"></parameter>
+	<parameter name= "Make" value = "2015"></parameter>
+	
+		<classes>
+			<class name = "TestNGAnnotations.AnnotationSequence"></class>
+		</classes>
+	</test>
+	
+	<test name = "Testing Parameterization of Data _ 3">
+		<classes>
+			<class name = "TestNGAnnotations.AnnotationSequence"></class>
+		</classes>
+	</test>
+	
+</suite> -->
+
+
+
+<!-- <suite name = "Sample Suite">
+	<test name = "Testing Groups in TestNG">
+		<groups>
+			<define name = "ExecuteAllGroups">
+				<include name = "AddItems"></include>
+				<include name = "DeleteItems"></include>
+				<include name = "Email"></include>
+			</define>		
+		
+			<run>
+				<include name = "ExecuteAllGroups"></include>
+				<exclude name = "teardown"></exclude>
+			</run>
+		
+		</groups>
+	<classes>
+		<class name="TestNGAnnotations.Groups"></class>	
+	</classes>
+	</test>
+</suite> -->
+
+ 
+ <!-- 
+<suite name = "Sample Suite">
+	<test name = "Check Before Test and Before Class">
+		<classes>
+			<class name = "BeforeTest_BeforeClass.Class1"></class>
+			<class name = "BeforeTest_BeforeClass.Class2"></class>
+			<class name = "BeforeTest_BeforeClass.TestingBeforeClassAndBeforeTest"></class>
+		</classes>
+	</test>
+</suite>
+ -->

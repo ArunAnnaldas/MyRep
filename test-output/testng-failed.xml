@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Sample Suite]" parallel="methods">
+  <test name="Sequence Test(failed)" parallel="methods">
+    <classes>
+      <class name="TestNGAnnotations.AnnotationSequence">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="f1"/>
+          <include name="beforeSuite"/>
+          <include name="testingParameters" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="AfterSuite"/>
+        </methods>
+      </class> <!-- TestNGAnnotations.AnnotationSequence -->
+    </classes>
+  </test> <!-- Sequence Test(failed) -->
+</suite> <!-- Failed suite [Sample Suite] -->

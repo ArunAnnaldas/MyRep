@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- STCM -->
+<suite name = "Sample Suite">
+	<listeners>
+		<listener class-name="retryAnalyzerPackage.Listener"></listener>
+	</listeners>
+	<test name = "RetryFailedTests">
+		<classes>
+			<class name = "retryAnalyzerPackage.retryTest"></class>
+		</classes>
+	</test>
+</suite>
+
