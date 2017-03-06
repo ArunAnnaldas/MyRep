@@ -30,8 +30,8 @@ public class Login{
         caps.setCapability(CapabilityType.PLATFORM, "Windows 10");
         //caps.SetCapability("deviceName", deviceName);
         //caps.SetCapability("deviceOrientation", deviceOrientation);
-        caps.setCapability("username", "ArunAnnaldas");//"SAUCE_USERNAME");
-        caps.setCapability("accessKey", "3717088d-9f3c-40bd-8ad0-4f4ff313f5fb");//"SAUCE_ACCESS_KEY");
+        caps.setCapability("username", System.getenv("SAUCE_USERNAME"));//"SAUCE_USERNAME");
+        caps.setCapability("accessKey", System.getenv("SAUCE_ACCESS_KEY"));//"SAUCE_ACCESS_KEY");
         caps.setCapability("name", "Login");
 
         URL commandExecutorUri = new URL("<http://ondemand.saucelabs.com/wd/hub>");
