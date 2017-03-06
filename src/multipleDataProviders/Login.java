@@ -12,12 +12,12 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Guice;
 import org.testng.annotations.Test;
 
-import com.saucelabs.common.SauceOnDemandAuthentication;
+
 
 @Guice
 public class Login{
 
-	SauceOnDemandAuthentication authentication;
+	
 	
 	@Test(dataProvider = "DataRepository", dataProviderClass = DataProviderHub.class)
 	public void testLogin(String UserName, String Password) throws InterruptedException, MalformedURLException {
